@@ -1,5 +1,5 @@
 import random
-def randomNumberInFile(Number):
+def Number(Number):
     f=open("HomeFile.txt", "w")
     numinLine = 0
     for i in range(Number):
@@ -12,7 +12,7 @@ def randomNumberInFile(Number):
     f.close()
 
 
-def squareOfNumberInFile(countOfLine):
+def SquareOfNumber(countOfLine):
     f=open("HomeFile.txt", "r+")
     lines=f.readlines()
     cp = 0
@@ -26,5 +26,5 @@ def squareOfNumberInFile(countOfLine):
         f.seek(cp)
     f.seek(0, 2)
     f.close()
-randomNumberInFile(1000)
-squareOfNumberInFile(100)
+Number(1000)
+SquareOfNumber(100)
